@@ -1,0 +1,80 @@
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.wrap {
+    overflow: hidden;
+    margin: 10px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+.box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+    border-radius: 15px;
+}
+
+
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    border-radius:15px;
+}
+ .boxInner img { width: 100%; 
+border-radius: 15px;
+box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+
+
+@media only screen and (max-width:480px) { 
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+@media only screen and (max-width:650px) and (min-width:481px) { 
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+}
+@media only screen and (max-width:1050px) and (min-width:651px) { 
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+    }
+}
+@media only screen and (max-width:1290px) and (min-width:1051px) { 
+    /* Medium desktop: 4 tiles */
+    .box {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+}

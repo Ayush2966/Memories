@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    grid-template-columns:200px 200px 200px 200px 200px 200px 200px ;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+  
+  body {
+    background-color: #ffcfd0;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    background-color: #1EAAFC;
+    background-image: linear-gradient(130deg, #f5c2ff 0%, #ffb9b9 85%, #ff0000 100%);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #fff;
+    border-radius: 4px;
+    border: 6px solid #171717;
+  }

@@ -1,0 +1,42 @@
+.gallery {
+    --s: 200px; /* control the size */
+    --g: 10px;  /* control the gap */
+    --f: 1.5;   /* control the scale factor */
+    height: calc(2*var(--s) * var(--f));
+    display: grid;
+    gap: var(--g);
+    width: calc(7*var(--s) + 5*var(--g));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(7,auto);
+  }
+  
+  .gallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+
+  }
+  
+  .gallery img:hover{
+    filter: grayscale(0);
+    width:  calc(var(--s)*var(--f));
+    height: calc(var(--s)*var(--f));
+  }
+  
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #b4c8ff;
+    
+  }

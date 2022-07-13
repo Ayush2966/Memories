@@ -1,0 +1,89 @@
+body{
+    background-image: linear-gradient(to top, #ffe8c3e7 20%, #fbd09b 80%);
+}
+#container{
+    width:1500px;
+    position:relative;
+    margin:0 auto;
+    top:25px;
+  }
+  
+  #overlay{
+    cursor: pointer;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:#000;
+    opacity:.7;
+    z-index:2000;
+    display:none;
+  }
+  
+  .photo{
+    position:relative;
+    float:left;
+    height:200px;
+    width:200px;
+    background:#fff;
+    border:1px solid #999;
+    
+    margin:20px;
+  }
+  
+  .photo-image{
+    cursor: pointer;
+    position:relative;
+    top:9px;
+    left:9px;
+    width:180px;
+    border:1px solid #999;  
+    z-index:1000;
+    opacity:0.6;
+    transition: width 1s, top 1s, left 1s, opacity 1s, z-index .01s;
+  }
+  
+  .photo-image:hover{
+    width:400px;
+    top:-50px;
+    left:-50px;
+    z-index:1001;
+    opacity:1;
+    border-radius: 15px;
+  }
+  
+  .photo-selected{
+    cursor:default;
+    z-index:2001;
+    width:500px;
+    opacity:1;
+    top:-20px;
+    left:-200px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Nov 11 2013 - Added "X" to close popup - just a visual cue */
+  /*.photo-x:after{
+    content: "X";
+    font-family: arial;
+    position: relative;
+    top: -535px;
+    font-weight: bold;
+    left: 285px;
+    padding: 10px 14px;
+    border: 2px solid black;
+    background: white;
+    z-index: 9999;
+    cursor: pointer;
+  }*/
+  
+  .photo-selected:hover{
+    width:500px;
+    top:-50px;
+    left:-50px;
+    z-index:2001;
+    opacity:1;
+    top:-20px;
+    left:-200px;
+  }

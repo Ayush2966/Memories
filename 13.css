@@ -1,0 +1,45 @@
+:root {
+	--dark: #373349;
+	--shadow: rgba(0,0,0,.2);
+  }
+  
+  html, body {
+	background-color:rgb(254, 220, 226);
+	margin: 5px;
+  }
+  
+  .container > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+  }
+  
+  .container > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 2px 16px var(--shadow);
+  }
+  
+  .container {
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	grid-auto-rows: 120px;
+	grid-auto-flow: dense;
+  }
+  
+  .horizontal {
+	grid-column: span 2;
+  }
+  
+  .vertical {
+	grid-row: span 2;
+  }
+  
+  .big {
+	grid-column: span 2;
+	grid-row: span 2;
+  }

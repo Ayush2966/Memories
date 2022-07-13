@@ -1,0 +1,86 @@
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 150px 200px;
+    gap: 1rem;
+  }
+  
+  li:nth-child(2) {
+    grid-row: span 2;
+  }
+  
+  li:nth-child(4) {
+    grid-row: span 3;
+  }
+  
+  
+  
+  /*
+      👇 Other than the layout
+  */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {  
+    min-height: 100vh;
+    padding: 2rem;  
+    background-size: cover;
+    font-family: 'Courgette', cursive;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(to top, #f6d365 0%, #fda085, #f6d365 0%, #fda085, #f6d365 0%, #fda085 100%);
+    background-size: 400% 400%; ;
+}
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    font: 24px/1.6 'Courgette', cursive;
+  }
+  
+  body {  
+    height: 100%;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  li {
+    min-width: 0;
+    padding: 14px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:
+      0.3px 0.5px 0.7px hsl(23deg 93% 31% / 0.36),
+      0.8px 1.6px 2px -0.8px hsl(23deg 93% 31% / 0.36),
+      2.1px 4.1px 5.2px -1.7px hsl(23deg 93% 31% / 0.36),
+      5px 10px 12.6px -2.5px hsl(23deg 93% 31% / 0.36);    
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  button {
+    display: block;
+    width: fit-content;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 3px;
+    margin-block-start: 1rem;
+    background-color: #fff;
+    color: #222;
+    font: 14px/1.6 system-ui;
+  }
